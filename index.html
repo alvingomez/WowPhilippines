@@ -14,7 +14,34 @@
 </head>
 
 <body>
-  <h1>Theme Starter</h1>  
+  <!-- NAVBAR-FIXED  -->
+  <div class="navbar-fixed">
+    <nav class="teal"> 
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#home" class="brand-logo">Wow Philippines</a>
+          <a href="#" data-activates="mobile-nav" class="button-collapse">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#search">Search</a></li>
+            <li><a href="#popular">Popular Places</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  
+  <ul class="side-nav" id="mobile-nav">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#search">Search</a></li>
+    <li><a href="#popular">Popular Places</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
 
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="js/all.min.js"></script>
@@ -23,7 +50,7 @@
   <script>
     $(document).ready(function () {
       // Custom JS & jQuery here
-      
+      $(".button-collapse").sideNav()
     });
   </script>
 </body>
