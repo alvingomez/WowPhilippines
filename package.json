@@ -1,0 +1,13 @@
+{
+  "name": "WowPhilippines",
+  "version": "1.0.0",
+  "description": "A front-end web template using materialize css ",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "live": "live-server"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
