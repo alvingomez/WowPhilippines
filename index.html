@@ -43,6 +43,45 @@
     <li><a href="#contact">Contact</a></li>
   </ul>
 
+  <!-- Section: Slider -->
+  <section class="slider">
+    <ul class="slides">
+      <li>
+        <img src="img/resort1.jpg" alt="">
+        <div class="caption center-align">
+          <h2>Take your dream vacation</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Whether you’re looking for water 
+            sports or a slice of culture, or just 
+            fancy lazing on beautiful beaches-the 
+            Philippines truly has something 
+            for every traveller.</h5>
+            <a href="" class="btn btn-large">Learn More</a>
+        </div>
+      </li>
+      <li>
+        <img src="/img/resort2.jpg" alt="">
+        <div class="caption left-align">
+        <h2>Beaches and Islands</h2>
+        <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+          Made up of 7,641 islands, the Philippines is one of the most biodiverse 
+          places on the planet. If you’re looking for the most pristine beaches 
+          and postcard-worthy views, the Philippines has a ton of them!
+        </h5>
+        <a href="" class="btn btn-large">Learn More</a>
+        <li>
+          <img src="/img/resort3.jpg" alt="">                
+        <div class="caption right-align">
+          <h2>Foodie Heaven</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-body">
+            From renowned favourites to unique local delicacies, Filipino food is 
+            bursting with flavours that will satisfy diverse palates.
+          </h5>
+        </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="js/all.min.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -50,8 +89,17 @@
   <script>
     $(document).ready(function () {
       // Custom JS & jQuery here
+      //Init Side Nav
       $(".button-collapse").sideNav()
     });
+
+      //init Slider
+      $(".slider").slider({
+        indicators:false,
+        height:500,
+        transition:4000,
+        interval: 6000
+      });
   </script>
 </body>
 
