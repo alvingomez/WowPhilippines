@@ -91,7 +91,7 @@
           <h3>Search Destinations</h3>
           <div class="input-field">
             <input type="text" class="white grey-text autocomplete"
-            placeholder="Manila, Boracay, Palawan, etc..." id="autocomplete-input">
+            placeholder="Manila, Boracay, Palawan, Cebu, etc..." id="autocomplete-input">
           </div>
         </div>
       </div>
@@ -107,10 +107,9 @@
       // Custom JS & jQuery here
       //Init Side Nav
       $(".button-collapse").sideNav()
-    });
 
-      //init Slider
-      $(".slider").slider({
+       //init Slider
+       $(".slider").slider({
         indicators:false,
         height:500,
         transition:3000,
@@ -118,7 +117,17 @@
       });
 
       //Autocomplete
-      
+      $('.autocomplete').autocomplete({
+        data:{
+          "Manila":null,
+          "Boracay":null,
+          "Palawan":null,
+          "Cebu":null,
+        }
+      });
+    });
+
+     
   </script>
 </body>
 
