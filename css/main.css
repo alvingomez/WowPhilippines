@@ -31,6 +31,7 @@ body{
 
 }
 
+/* Located underneath the input text box (go and check elements) */
 .autocomplete-content{
     position:absolute;
     width:100%;
