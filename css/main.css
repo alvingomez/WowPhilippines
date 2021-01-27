@@ -1,3 +1,40 @@
+/*Basic reset*/
+*, 
+*::before,
+*::after{
+    margin: 0;
+    padding: 0; 
+    box-sizing: inherit;
+    
+}
+
+html{
+    /* DEFINES WHAT 1 REM IS */
+    /* (10 / 16) * 100 */
+    /* font-size: 62.5%; */
+}
+
+/*Setting up the font properties */
+body{
+     box-sizing: border-box;
+}
+
 .slider .btn{
-    margin: 20px;
+    margin: 2rem;
+}
+
+.section-search input {
+    padding:5px;
+    font-size:18px !important;
+    width:90% !important;
+    border: yellow 3px solid;
+
+}
+
+/* Located underneath the input text box (go and check elements) */
+.autocomplete-content{
+    position:absolute;
+    width:100%;
+    text-align:center;
+    
 }

@@ -83,6 +83,53 @@
     </ul>
   </section>
 
+  <!-- Section: Search -->
+  <section class="section section-search teal darken-1 white-text center">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h3>Search Destinations</h3>
+          <div class="input-field">
+            <input type="text" class="white grey-text autocomplete"
+            placeholder="Manila, Boracay, Palawan, Cebu, etc..." id="autocomplete-input">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section:Icon boxes -->
+  <section class="section section-icons grey lighten-4 center">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card-panel">
+          <i class="material-icons large teal-text">room</i>
+          <h4>Pick where</h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, vel.</p>
+        </div>
+        </div>
+        <!-- column end --> 
+        <div class="col s12 m4">
+          <div class="card-panel">
+          <i class="material-icons large teal-text">store</i>
+          <h4>Travel shop</h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, vel.</p>
+        </div>
+        </div>
+        <!-- column end --> 
+        <div class="col s12 m4">
+          <div class="card-panel">
+          <i class="material-icons large teal-text">airplanemode_active</i>
+          <h4>Fly Cheap</h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, vel.</p>
+        </div>
+      </div>
+        <!-- column end --> 
+      </div>        
+    </div>
+  </section>
+
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="js/all.min.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -92,15 +139,27 @@
       // Custom JS & jQuery here
       //Init Side Nav
       $(".button-collapse").sideNav()
-    });
 
-      //init Slider
-      $(".slider").slider({
+       //init Slider
+       $(".slider").slider({
         indicators:false,
         height:500,
         transition:3000,
         interval: 5000
       });
+
+      //Autocomplete
+      $('.autocomplete').autocomplete({
+        data:{
+          "Manila":null,
+          "Boracay":null,
+          "Palawan":null,
+          "Cebu":null,
+        }
+      });
+    });
+
+     
   </script>
 </body>
 
